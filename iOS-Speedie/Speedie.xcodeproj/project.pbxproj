@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F04F8981D20720500550B8B /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F04F8971D20720500550B8B /* Int.swift */; };
+		0F04F89A1D20738000550B8B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F04F8991D20738000550B8B /* BaseViewController.swift */; };
+		0F04F89C1D20765000550B8B /* SpeedieUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F04F89B1D20765000550B8B /* SpeedieUserDefaults.swift */; };
+		0F09CA601DB04E8B00A2CB4E /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F09CA5F1DB04E8B00A2CB4E /* AboutUsViewController.swift */; };
+		0F13E8681D20367800D52E1F /* SpeedieAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F13E8671D20367800D52E1F /* SpeedieAnnotation.swift */; };
+		0F2619941DA3116D0054D441 /* Sirene.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 0F2619931DA311600054D441 /* Sirene.m4a */; };
+		0F33C24E1D22D4A200A0A109 /* AskLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F33C24D1D22D4A200A0A109 /* AskLocationViewController.swift */; };
+		0F33C2501D22D9F400A0A109 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F33C24F1D22D9F400A0A109 /* UIViewController.swift */; };
+		0F4EF4691E65B36D006A0C7B /* AlarmSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4EF4681E65B36D006A0C7B /* AlarmSettingViewController.swift */; };
+		0F58723C1D171EF700697E7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F58723B1D171EF700697E7C /* AppDelegate.swift */; };
+		0F5872411D171EF700697E7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F58723F1D171EF700697E7C /* Main.storyboard */; };
+		0F5872431D171EF700697E7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F5872421D171EF700697E7C /* Assets.xcassets */; };
+		0F5872461D171EF700697E7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F5872441D171EF700697E7C /* LaunchScreen.storyboard */; };
+		0F73D08521FA6D3300A9F181 /* IncidentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F73D08321FA6D3300A9F181 /* IncidentResponse.swift */; };
+		0F73D08621FA6D3300A9F181 /* IncidentsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F73D08421FA6D3300A9F181 /* IncidentsResponse.swift */; };
+		0F73D08821FA6D6400A9F181 /* ActivityResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F73D08721FA6D6400A9F181 /* ActivityResponse.swift */; };
+		0F74D23C1D18597E0029ACAA /* IncidentInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F74D23B1D18597E0029ACAA /* IncidentInfoViewController.swift */; };
+		0F74D23E1D186C6F0029ACAA /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F74D23D1D186C6F0029ACAA /* String.swift */; };
+		0F9C41DF1D1723FC00D5E2DF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F9C41DE1D1723FC00D5E2DF /* MapKit.framework */; };
+		0F9C41E11D17240400D5E2DF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F9C41E01D17240400D5E2DF /* CoreLocation.framework */; };
+		0F9C41E91D17256900D5E2DF /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9C41E81D17256900D5E2DF /* UIColor.swift */; };
+		0F9C41EC1D172CFE00D5E2DF /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9C41EB1D172CFE00D5E2DF /* UIView.swift */; };
+		0F9C41F11D17314900D5E2DF /* CreateIncidentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9C41F01D17314900D5E2DF /* CreateIncidentViewController.swift */; };
+		0F9C41F31D17315200D5E2DF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9C41F21D17315200D5E2DF /* MainViewController.swift */; };
+		0FCFC9131D19D62700035F4C /* IncidentTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCFC9121D19D62700035F4C /* IncidentTypeView.swift */; };
+		0FCFC9151D19D65100035F4C /* BaseCustomXibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FCFC9141D19D65100035F4C /* BaseCustomXibView.swift */; };
+		0FCFC9171D19D69700035F4C /* IncidentTypeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FCFC9161D19D69700035F4C /* IncidentTypeView.xib */; };
+		0FD4453F1E7EFED900D27129 /* AlarmSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD4453E1E7EFED900D27129 /* AlarmSetting.swift */; };
+		0FF14E991D1B19C3004C9E8D /* SelectLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF14E981D1B19C3004C9E8D /* SelectLocationViewController.swift */; };
+		0FF14E9B1D1B1B80004C9E8D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF14E9A1D1B1B80004C9E8D /* Constants.swift */; };
+		3AC8482ECA8572DA38B1E042 /* Pods_Speedie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD6146291A74564F9C16E78 /* Pods_Speedie.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F04F8971D20720500550B8B /* Int.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		0F04F8991D20738000550B8B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		0F04F89B1D20765000550B8B /* SpeedieUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpeedieUserDefaults.swift; path = ../SpeedieUserDefaults.swift; sourceTree = "<group>"; };
+		0F09CA5F1DB04E8B00A2CB4E /* AboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		0F13E8671D20367800D52E1F /* SpeedieAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpeedieAnnotation.swift; path = Speedie/Views/SpeedieAnnotation/SpeedieAnnotation.swift; sourceTree = SOURCE_ROOT; };
+		0F2619931DA311600054D441 /* Sirene.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Sirene.m4a; sourceTree = "<group>"; };
+		0F33C24D1D22D4A200A0A109 /* AskLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AskLocationViewController.swift; sourceTree = "<group>"; };
+		0F33C24F1D22D9F400A0A109 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		0F4EF4681E65B36D006A0C7B /* AlarmSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmSettingViewController.swift; sourceTree = "<group>"; };
+		0F5872381D171EF700697E7C /* Speedie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Speedie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F58723B1D171EF700697E7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0F5872401D171EF700697E7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0F5872421D171EF700697E7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0F5872451D171EF700697E7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0F5872471D171EF700697E7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F73D08321FA6D3300A9F181 /* IncidentResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncidentResponse.swift; sourceTree = "<group>"; };
+		0F73D08421FA6D3300A9F181 /* IncidentsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncidentsResponse.swift; sourceTree = "<group>"; };
+		0F73D08721FA6D6400A9F181 /* ActivityResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityResponse.swift; sourceTree = "<group>"; };
+		0F74D23B1D18597E0029ACAA /* IncidentInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncidentInfoViewController.swift; sourceTree = "<group>"; };
+		0F74D23D1D186C6F0029ACAA /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		0F74D23F1D18889F0029ACAA /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
+		0F9C41DE1D1723FC00D5E2DF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		0F9C41E01D17240400D5E2DF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0F9C41E81D17256900D5E2DF /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		0F9C41EB1D172CFE00D5E2DF /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		0F9C41F01D17314900D5E2DF /* CreateIncidentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateIncidentViewController.swift; sourceTree = "<group>"; };
+		0F9C41F21D17315200D5E2DF /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		0FCFC9121D19D62700035F4C /* IncidentTypeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncidentTypeView.swift; sourceTree = "<group>"; };
+		0FCFC9141D19D65100035F4C /* BaseCustomXibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCustomXibView.swift; sourceTree = "<group>"; };
+		0FCFC9161D19D69700035F4C /* IncidentTypeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IncidentTypeView.xib; sourceTree = "<group>"; };
+		0FD4453E1E7EFED900D27129 /* AlarmSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlarmSetting.swift; path = ../AlarmSetting.swift; sourceTree = "<group>"; };
+		0FF14E981D1B19C3004C9E8D /* SelectLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectLocationViewController.swift; sourceTree = "<group>"; };
+		0FF14E9A1D1B1B80004C9E8D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ../Constants.swift; sourceTree = "<group>"; };
+		1CD6146291A74564F9C16E78 /* Pods_Speedie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Speedie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5675944B8E58BB9107DCF38C /* Pods-Speedie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Speedie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Speedie/Pods-Speedie.debug.xcconfig"; sourceTree = "<group>"; };
+		C171161267A4D518B3B5206F /* Pods-Speedie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Speedie.release.xcconfig"; path = "Pods/Target Support Files/Pods-Speedie/Pods-Speedie.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F5872351D171EF700697E7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F9C41E11D17240400D5E2DF /* CoreLocation.framework in Frameworks */,
+				0F9C41DF1D1723FC00D5E2DF /* MapKit.framework in Frameworks */,
+				3AC8482ECA8572DA38B1E042 /* Pods_Speedie.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F13E8691D2037A000D52E1F /* SpeedieAnnotation */ = {
+			isa = PBXGroup;
+			children = (
+				0F13E8671D20367800D52E1F /* SpeedieAnnotation.swift */,
+			);
+			path = SpeedieAnnotation;
+			sourceTree = "<group>";
+		};
+		0F23AF0D1EE43C08009CA5F1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				0F04F89B1D20765000550B8B /* SpeedieUserDefaults.swift */,
+				0FF14E9A1D1B1B80004C9E8D /* Constants.swift */,
+				0FD4453E1E7EFED900D27129 /* AlarmSetting.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		0F58722F1D171EF700697E7C = {
+			isa = PBXGroup;
+			children = (
+				0F58723A1D171EF700697E7C /* Speedie */,
+				0F5872391D171EF700697E7C /* Products */,
+				9E9DC402BC7C32692215747F /* Frameworks */,
+				EFF9996B9711DF75B91EEC97 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		0F5872391D171EF700697E7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F5872381D171EF700697E7C /* Speedie.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F58723A1D171EF700697E7C /* Speedie */ = {
+			isa = PBXGroup;
+			children = (
+				0F58723B1D171EF700697E7C /* AppDelegate.swift */,
+				0F9C41EF1D17311F00D5E2DF /* ViewControllers */,
+				0FCFC9101D19D5F300035F4C /* Views */,
+				0F58723F1D171EF700697E7C /* Main.storyboard */,
+				0F74D23F1D18889F0029ACAA /* BridgeHeader.h */,
+				0F73D08121FA6C9F00A9F181 /* Model */,
+				0F9C41E51D1724F700D5E2DF /* Extensions */,
+				0F23AF0D1EE43C08009CA5F1 /* Utilities */,
+				0F9C41EA1D1728EB00D5E2DF /* SupportingFiles */,
+			);
+			path = Speedie;
+			sourceTree = "<group>";
+		};
+		0F73D08121FA6C9F00A9F181 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0F73D08221FA6D2300A9F181 /* ResponseModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0F73D08221FA6D2300A9F181 /* ResponseModel */ = {
+			isa = PBXGroup;
+			children = (
+				0F73D08721FA6D6400A9F181 /* ActivityResponse.swift */,
+				0F73D08321FA6D3300A9F181 /* IncidentResponse.swift */,
+				0F73D08421FA6D3300A9F181 /* IncidentsResponse.swift */,
+			);
+			path = ResponseModel;
+			sourceTree = "<group>";
+		};
+		0F9C41E51D1724F700D5E2DF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0F9C41E81D17256900D5E2DF /* UIColor.swift */,
+				0F9C41EB1D172CFE00D5E2DF /* UIView.swift */,
+				0F74D23D1D186C6F0029ACAA /* String.swift */,
+				0F04F8971D20720500550B8B /* Int.swift */,
+				0F33C24F1D22D9F400A0A109 /* UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0F9C41EA1D1728EB00D5E2DF /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0F2619931DA311600054D441 /* Sirene.m4a */,
+				0F5872421D171EF700697E7C /* Assets.xcassets */,
+				0F5872441D171EF700697E7C /* LaunchScreen.storyboard */,
+				0F5872471D171EF700697E7C /* Info.plist */,
+			);
+			name = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		0F9C41EF1D17311F00D5E2DF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0F04F8991D20738000550B8B /* BaseViewController.swift */,
+				0F9C41F21D17315200D5E2DF /* MainViewController.swift */,
+				0F74D23B1D18597E0029ACAA /* IncidentInfoViewController.swift */,
+				0F9C41F01D17314900D5E2DF /* CreateIncidentViewController.swift */,
+				0FF14E981D1B19C3004C9E8D /* SelectLocationViewController.swift */,
+				0F33C24D1D22D4A200A0A109 /* AskLocationViewController.swift */,
+				0F09CA5F1DB04E8B00A2CB4E /* AboutUsViewController.swift */,
+				0F4EF4681E65B36D006A0C7B /* AlarmSettingViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0FCFC9101D19D5F300035F4C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0FCFC9141D19D65100035F4C /* BaseCustomXibView.swift */,
+				0FCFC9111D19D60500035F4C /* IncidentTypeView */,
+				0F13E8691D2037A000D52E1F /* SpeedieAnnotation */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0FCFC9111D19D60500035F4C /* IncidentTypeView */ = {
+			isa = PBXGroup;
+			children = (
+				0FCFC9121D19D62700035F4C /* IncidentTypeView.swift */,
+				0FCFC9161D19D69700035F4C /* IncidentTypeView.xib */,
+			);
+			path = IncidentTypeView;
+			sourceTree = "<group>";
+		};
+		9E9DC402BC7C32692215747F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F9C41E01D17240400D5E2DF /* CoreLocation.framework */,
+				0F9C41DE1D1723FC00D5E2DF /* MapKit.framework */,
+				1CD6146291A74564F9C16E78 /* Pods_Speedie.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFF9996B9711DF75B91EEC97 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5675944B8E58BB9107DCF38C /* Pods-Speedie.debug.xcconfig */,
+				C171161267A4D518B3B5206F /* Pods-Speedie.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0F5872371D171EF700697E7C /* Speedie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F58724A1D171EF700697E7C /* Build configuration list for PBXNativeTarget "Speedie" */;
+			buildPhases = (
+				E2DC5ECC2B634D5ABFE121EB /* [CP] Check Pods Manifest.lock */,
+				0F5872341D171EF700697E7C /* Sources */,
+				0F5872351D171EF700697E7C /* Frameworks */,
+				0F5872361D171EF700697E7C /* Resources */,
+				0F1C19841D9453B700C38D28 /* ShellScript */,
+				8BB15298579748F1FBEC9641 /* [CP] Embed Pods Frameworks */,
+				FD712DB06CF7A9875250DABF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Speedie;
+			productName = Speedie;
+			productReference = 0F5872381D171EF700697E7C /* Speedie.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F5872301D171EF700697E7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0830;
+				TargetAttributes = {
+					0F5872371D171EF700697E7C = {
+						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0830;
+					};
+				};
+			};
+			buildConfigurationList = 0F5872331D171EF700697E7C /* Build configuration list for PBXProject "Speedie" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0F58722F1D171EF700697E7C;
+			productRefGroup = 0F5872391D171EF700697E7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F5872371D171EF700697E7C /* Speedie */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0F5872361D171EF700697E7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F2619941DA3116D0054D441 /* Sirene.m4a in Resources */,
+				0FCFC9171D19D69700035F4C /* IncidentTypeView.xib in Resources */,
+				0F5872461D171EF700697E7C /* LaunchScreen.storyboard in Resources */,
+				0F5872431D171EF700697E7C /* Assets.xcassets in Resources */,
+				0F5872411D171EF700697E7C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F1C19841D9453B700C38D28 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+		8BB15298579748F1FBEC9641 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Speedie/Pods-Speedie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2DC5ECC2B634D5ABFE121EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD712DB06CF7A9875250DABF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Speedie/Pods-Speedie-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F5872341D171EF700697E7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F04F89C1D20765000550B8B /* SpeedieUserDefaults.swift in Sources */,
+				0F33C24E1D22D4A200A0A109 /* AskLocationViewController.swift in Sources */,
+				0F4EF4691E65B36D006A0C7B /* AlarmSettingViewController.swift in Sources */,
+				0F9C41F31D17315200D5E2DF /* MainViewController.swift in Sources */,
+				0F33C2501D22D9F400A0A109 /* UIViewController.swift in Sources */,
+				0F9C41EC1D172CFE00D5E2DF /* UIView.swift in Sources */,
+				0F73D08521FA6D3300A9F181 /* IncidentResponse.swift in Sources */,
+				0FCFC9151D19D65100035F4C /* BaseCustomXibView.swift in Sources */,
+				0F04F89A1D20738000550B8B /* BaseViewController.swift in Sources */,
+				0F74D23C1D18597E0029ACAA /* IncidentInfoViewController.swift in Sources */,
+				0FD4453F1E7EFED900D27129 /* AlarmSetting.swift in Sources */,
+				0F9C41F11D17314900D5E2DF /* CreateIncidentViewController.swift in Sources */,
+				0F73D08821FA6D6400A9F181 /* ActivityResponse.swift in Sources */,
+				0F04F8981D20720500550B8B /* Int.swift in Sources */,
+				0F9C41E91D17256900D5E2DF /* UIColor.swift in Sources */,
+				0F09CA601DB04E8B00A2CB4E /* AboutUsViewController.swift in Sources */,
+				0FF14E9B1D1B1B80004C9E8D /* Constants.swift in Sources */,
+				0F74D23E1D186C6F0029ACAA /* String.swift in Sources */,
+				0FF14E991D1B19C3004C9E8D /* SelectLocationViewController.swift in Sources */,
+				0F73D08621FA6D3300A9F181 /* IncidentsResponse.swift in Sources */,
+				0F58723C1D171EF700697E7C /* AppDelegate.swift in Sources */,
+				0F13E8681D20367800D52E1F /* SpeedieAnnotation.swift in Sources */,
+				0FCFC9131D19D62700035F4C /* IncidentTypeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0F58723F1D171EF700697E7C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F5872401D171EF700697E7C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0F5872441D171EF700697E7C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0F5872451D171EF700697E7C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0F5872481D171EF700697E7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0F5872491D171EF700697E7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0F58724B1D171EF700697E7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5675944B8E58BB9107DCF38C /* Pods-Speedie.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Speedie/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dk.speedie.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = Speedie/BridgeHeader.h;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0F58724C1D171EF700697E7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C171161267A4D518B3B5206F /* Pods-Speedie.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Speedie/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dk.speedie.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = Speedie/BridgeHeader.h;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F5872331D171EF700697E7C /* Build configuration list for PBXProject "Speedie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F5872481D171EF700697E7C /* Debug */,
+				0F5872491D171EF700697E7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F58724A1D171EF700697E7C /* Build configuration list for PBXNativeTarget "Speedie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F58724B1D171EF700697E7C /* Debug */,
+				0F58724C1D171EF700697E7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0F5872301D171EF700697E7C /* Project object */;
+}

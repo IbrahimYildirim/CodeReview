@@ -1,0 +1,114 @@
+//
+//  IncidentInfoViewController.swift
+//  Speedie
+//
+//  Created by Ibrahim Yildirim on 20/06/16.
+//
+//
+
+import UIKit
+import MapKit
+import RxSwift
+
+class IncidentInfoViewController: UIViewController {
+
+    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var lblDescription: UILabel!
+    @IBOutlet weak var lblConfirms: UILabel!
+    @IBOutlet weak var lblDate: UILabel!
+    @IBOutlet weak var btnConfirm: UIButton!
+    @IBOutlet weak var btnDeny: UIButton!
+    @IBOutlet weak var lblAmountOfConfirms: UILabel!
+    @IBOutlet weak var lblAmountOfDenies: UILabel!
+    
+    var incident : IncidentResponse!
+    
+    var incidentId : String?
+    
+    let disposeBag = DisposeBag()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        setupUI()
+        
+        lblConfirms.attributedText = createFakeAttributedString()
+<<<<<<< HEAD
+        lblDescription.text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+        
+        getIncident(incidentId!).subscribeNext{ val in
+            let incident : IncidentResponse = val
+            debugPrint(val)
+            }.addDisposableTo(disposeBag)
+    
+        getIncidentsNearBy(40, latitude: 57, longitude: 24)
+=======
+        lblDescription.text = incident.description
+        lblAmountOfDenies.text = "\(incident.denies)"
+        lblAmountOfConfirms.text = "\(incident.confirms)"
+        lblDate.text = incident.createdDate(includeCreated: false)
+        
+>>>>>>> 0a44b110245124d3ed8f9f8ecebdaec2b5e1e892
+    }
+    
+    override func viewDidLayoutSubviews() {
+        updateLabels()
+    }
+    
+    func setupUI() {
+        self.title = "Info"
+        edgesForExtendedLayout = .None
+        mapView.userInteractionEnabled = false
+        
+        btnConfirm.addDropShadowToView(color: UIColor.blackColor(), radius: 1, offset: CGSizeZero, opacity: 0.5)
+        btnDeny.addDropShadowToView(color: UIColor.blackColor(), radius: 1, offset: CGSizeZero, opacity: 0.5)
+    }
+    
+    func updateLabels() {
+        var descFrame = lblDescription.frame
+        descFrame.size.height = 0
+        lblDescription.frame = descFrame
+        lblDescription.sizeToFit()
+        
+        var historyFrame = lblConfirms.frame
+        historyFrame.size.height = 0
+        lblConfirms.frame = historyFrame
+        lblConfirms.sizeToFit()
+    }
+    
+    func createFakeAttributedString() -> NSAttributedString {
+        let attributedString : NSMutableAttributedString = NSMutableAttributedString()
+        attributedString.appendAttributedString("Afkræftet - 10:22\n".attributedTextWithColor(UIColor(hexCode: 0x800000)))
+        attributedString.appendAttributedString("Bekræftet - 11:23\n".attributedTextWithColor(UIColor(hexCode: 0x008000)))
+        attributedString.appendAttributedString("Afkræftet - 12:24\n".attributedTextWithColor(UIColor(hexCode: 0x800000)))
+        attributedString.appendAttributedString("Bekræftet - 14:25\n".attributedTextWithColor(UIColor(hexCode: 0x008000)))
+        attributedString.appendAttributedString("Bekræftet - 15:26\n".attributedTextWithColor(UIColor(hexCode: 0x008000)))
+        attributedString.appendAttributedString("Afkræftet - 16:27\n".attributedTextWithColor(UIColor(hexCode: 0x800000)))
+        return attributedString
+    }
+}
+
+extension IncidentInfoViewController : UIScrollViewDelegate {
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        let scrollOffSet = scrollView.contentOffset.y
+        let newScale = ((scrollOffSet * -1) / 200) + 1
+        
+        if scrollOffSet < 0.0 {
+            if newScale > 1.0 && newScale < 2.0 {
+                mapView.transform = CGAffineTransformMakeScale(newScale, newScale)
+            }
+            var newFrame = mapView.frame
+            newFrame.origin.y = scrollOffSet / 4
+            mapView.frame = newFrame
+        } else if scrollOffSet > 0.0 {
+            var newFrame = mapView.frame
+            newFrame.origin.y = -scrollOffSet / 2
+            mapView.frame = newFrame
+        } else if scrollOffSet == 0 {
+            mapView.transform = CGAffineTransformIdentity
+            var newFrame = mapView.frame
+            newFrame.origin.y = 0
+            mapView.frame = newFrame
+        }
+    }
+}
