@@ -10,14 +10,16 @@ Challenge om at lave en robot i et gitter som brugeren selv vælger hvor stor de
 1. Starter med at indtaste gitter størrelse
 2. Indtast start positionen for robotten
 3. Indtast rute for robotten
-	-	Ved højre/venstre drejer robotten og bevæger sig kun med forward	
-4. For hver gang robotten går "Out of grid" gives en exception.
-5. Når ruten er skrevet, får man slut positionen og antallet af exception ved at klikke kør
+	-	Ved højre/venstre drejer robotten og med forward bevæger den sig frem en gang.
+4. For hver gang robotten går "Out of grid" gives der en exception.
+5. Når ruten er skrevet, får man slut positionen og antallet af exception ved at klikke "Run"
+6. Det var optional at lave UI med gitteret og robotten til denne challenge.
 
 
 ## Speedie - iOS
 
-Et projekt jeg lavede for et stykke tid siden i min fritid da jeg boede i Tyskland. Designet og implementeringen er lavet af mig. Jeg har fjernet API opkoblingen af appen. 
+Et projekt jeg lavede for et stykke tid siden i min fritid da jeg boede i Tyskland. Designet, backend og implementeringen af appen er lavet af mig. Jeg har dog lige fjernet API opkoblingen af appen da denne var udløbet.
+
 Jeg syntes den har nogle flotte interaktioner så i kan tjekke det ud hvis i vil. 
 
-Senere lancerede jeg den i AppStore under navnet TrafikPilot sammen med en ven der stod for markedføringen, men det blev ikke til særlig stor success pga. konkurrencen fra andre lignende apps som bl.a. fartkontrol, trafik alarm osv. som allerede dominerede markedet. Denne app var dog langt flottere og mere brugervenlig end de andre. 
+Senere lancerede jeg den i AppStore under navnet TrafikPilot sammen med en ven der stod for markedsføringen, men det blev ikke til særlig stor success pga. konkurrencen fra andre lignende apps som bl.a. fartkontrol, trafik alarm osv. som allerede dominerede markedet. Denne app var dog langt flottere og mere brugervenlig end de andre.
