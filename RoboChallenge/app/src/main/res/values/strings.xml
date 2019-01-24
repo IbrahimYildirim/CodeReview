@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Robo Challenge</string>
+    <string name="enter_of_columns_and_rows">Enter # of Columns and Rows</string>
+</resources>
